@@ -1,57 +1,49 @@
-import React , {useState} from 'react'
+import React, {useState} from 'react';
 import { MdModeOfTravel , MdOutlineTravelExplore } from "react-icons/md";
-import { Link } from 'react-router-dom';
 
-
-function NavBar() {
- 
-    const [nav, setNav] = useState (false)
-
-    const handelNav = () => {
-      setNav(!nav)
+const Navbar = () => {
+    const [nav, setNav] = useState(false)
+    const handleNav = () => {
+        setNav(!nav)
     }
 
-    const closeNav = () => {
-      setNav(false);
-    };
-
   return (
-    <div className='text-white items-center h-24 max-w-[1240px] px-4 mx-auto flex justify-between'>
-     
-      <h1 id="hero" className='w-full text-3xl font-bold text-[white]'>MFC PDF</h1>
-      
-      
-       <ul className='hidden md:flex'>
-        <Link to="/" className='p-4 transition-transform duration-300 ease-in-out transform hover:scale-110  hover:text-[#676767]'><li>Home</li></Link>
-        <Link to="/about" className='p-4 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-[#676767] '><li>About</li></Link>
-        <Link to="/pdf" className='p-4 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-[#676767] '><li>PDF</li></Link>
-        <Link to="/contact" className='p-4 transition-transform duration-300 ease-in-out transform hover:scale-110  hover:text-[#676767]'><li>Services</li></Link>
-       </ul>
+    <div className='w-full h-[90px] bg-black'>
+      <div className='max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full'>
+        <div>
+          <h1 className='text-white text-3xl bold'>Selimi Travel</h1>
+        </div>
 
-       {/* menu burger */}
-      <div onClick={handelNav} className='block md:hidden'>
-        {nav ? <MdModeOfTravel size={25 } /> :   <MdOutlineTravelExplore size={25 } /> }
+        {/* Desktop Menu */}
+        <div className='hidden md:flex'>
+          <ul className='flex text-white items-center'>
+            <li className="mr-4">Platform</li>
+            <li className="mr-4">Developers</li>
+            <li className="mr-4">Community</li>
+            <li className="mr-4">About</li>
+            <button className='ml-4'>Use Defi</button>
+          </ul>
+        </div>
+
+        {/* Hamburger menu */}
+        <div onClick={handleNav} className='block md:hidden'>
+            {nav ? <MdModeOfTravel size={30} className='text-white' /> : <MdOutlineTravelExplore size={30} className='text-white' />}
+        </div>
+
+        {/* Mobile Menu */}
+        <div className={nav ? 'w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center ' : 
+    'hidden md:hidden'}>
+          <ul>
+            <li className='text-2xl pb-4'>Platform</li>
+            <li className='text-2xl pb-4'>Developers</li>
+            <li className='text-2xl pb-4'>Community</li>
+            <li className='text-2xl pb-4'>About</li>
+            <button className='m-8'>Use Defi</button>
+          </ul>
+        </div>
       </div>
-
-
-      {/*  mobile styling */}
-      <div className={nav ? ' fixed left-0 top-0 w-[60%] border-r border-r-[white] h-full bg-[black]' : 'fixed left-[-100%]' } >
-       
-        <h1 id="hero" className='w-full text-3xl font-bold text-[white] m-4'>MFC PDF</h1>
-
-        <ul className=' p-1'>
-         <Link to="/" onClick={closeNav}><li className='p-4 border-b border-b-[white] hover:text-[#676767] '>Home</li></Link>
-         <Link to="/about" onClick={closeNav}><li className='p-4 border-b border-b-[white] hover:text-[#676767]'>About</li></Link>
-         <Link to="/pdf" onClick={closeNav}><li className='p-4 border-b border-b-[white] hover:text-[#676767] '>Services</li></Link>
-         <Link to="/contact" onClick={closeNav}><li className='p-4 border-b border-b-[white] hover:text-[#676767] '>Contact</li></Link>
-        </ul>
-
-      </div>
-
-
-
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default Navbar;  
