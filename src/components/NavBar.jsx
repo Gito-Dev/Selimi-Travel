@@ -17,11 +17,11 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className='hidden md:flex'>
           <ul className='flex text-white items-center'>
-            <li className="mr-4">Platform</li>
-            <li className="mr-4">Developers</li>
-            <li className="mr-4">Community</li>
-            <li className="mr-4">About</li>
-            <button className='ml-4'>Use Defi</button>
+            <li className="mr-4">Kreu</li>
+            <li className="mr-4">Rreth Nesh</li>
+            <li className="mr-4">Sherbimet</li>
+            <li className="mr-4">Kontakt</li>
+            <button type="button" className="text-black bg-white hover:bg-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Telefononi</button>
           </ul>
         </div>
 
@@ -33,12 +33,12 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div className={nav ? 'w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center ' : 
     'hidden md:hidden'}>
-          <ul>
-            <li className='text-2xl pb-4'>Platform</li>
-            <li className='text-2xl pb-4'>Developers</li>
-            <li className='text-2xl pb-4'>Community</li>
-            <li className='text-2xl pb-4'>About</li>
-            <button className='m-8'>Use Defi</button>
+          <ul className='pb-5'>
+            <li className='text-2xl pb-4'>Kreu</li>
+            <li className='text-2xl pb-4'>Rreth Nesh</li>
+            <li className='text-2xl pb-4'>Sherbimet</li>
+            <li className='text-2xl pb-4'>Kontakti</li>
+            <button type="button" className="text-black hover:border-blue-200 border-2 bg-white hover:bg-slate-200 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Telefononi</button>
           </ul>
         </div>
       </div>
