@@ -10,7 +10,10 @@ const Hero = () => {
     <>
     <div className='w-full h-[90vh] top-[90px]'>
     <video
-        className='object-cover h-full w-full absolute -z-10'
+        className='object-cover h-full w-full  absolute -z-10 ' style={{
+        height: '500px',
+        width: 'auto',
+        }}
         src={heroVid}
         autoPlay
         loop
@@ -24,10 +27,7 @@ const Hero = () => {
         Bileta Avioni , Autobusi , Trageti
        </p>
 
-       {/* <div   className='flex justify-center items-center '>
-        <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4'>PDF në lëndët e</p>
-        <ReactTyped className='text-[#1C64F2]  md:text-5xl sm:text-4xl text-xl font-bold pl-2 md:pl-4' strings={['Matematikes', 'Gjuhes Shqipe', 'Anglishtes']} typeSpeed={120} backSpeed={120} loop />
-        </div> */}
+     
 
         
         <div className=' mt-10'>
