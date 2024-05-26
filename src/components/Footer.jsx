@@ -7,12 +7,12 @@ function Footer() {
 
 <footer class="p-4 bg-black md:p-8 lg:p-10">
   <div class="mx-auto max-w-screen-xl text-center">
-      <div  class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
+      <div  class="flex justify-center items-center text-2xl font-semibold text-white">
 
         Selimi Travel  
       </div>
-      <p class="my-6 text-gray-500 dark:text-gray-400">"Filloni udhëtimet të paharrueshme me Selimi Travel, ku çdo destinacion është një kapitull i ri në aventurën tuaj."</p>
-      <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+      <p class="my-6 text-gray-500 ">"Filloni udhëtimet të paharrueshme me Selimi Travel, ku çdo destinacion është një kapitull i ri në aventurën tuaj."</p>
+      <ul class="flex flex-wrap justify-center items-center mb-6 text-white">
           <li>
               <a href="link" class="mr-4 hover:underline md:mr-6 ">Instagram</a>
           </li>
