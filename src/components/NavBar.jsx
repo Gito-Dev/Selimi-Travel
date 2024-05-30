@@ -21,7 +21,7 @@ const Navbar = () => {
             <li className="mr-4 hover:text-gray-400">Rreth Nesh</li>
             <li className="mr-4 hover:text-gray-400">Sherbimet</li>
             <li className="mr-4 hover:text-gray-400">Kontakt</li>
-            <button type="button" className="text-black hover:text-white  bg-white hover:bg-black font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Telefononi</button>
+            <button type="button" className="text-black hover:text-white hover:border-white border-2  bg-white hover:bg-black text-base font-medium rounded-lg px-5 py-2.5 me-2 mb-2">Telefononi</button>
           </ul>
         </div>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
             <li className='text-2xl pb-4 hover:text-gray-400'>Rreth Nesh</li>
             <li className='text-2xl pb-4 hover:text-gray-400'>Sherbimet</li>
             <li className='text-2xl pb-4 hover:text-gray-400'>Kontakti</li>
-            <button type="button" className="text-black hover:border-blue-200 border-2 bg-white hover:bg-gray-400 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Telefononi</button>
+            <button type="button" className="text-black hover:text-white  bg-white hover:bg-black hover:border-white border-2   rounded-lg text-base font-medium px-5 py-2.5 me-2 mb-2">Telefononi</button>
           </ul>
         </div>
       </div>
