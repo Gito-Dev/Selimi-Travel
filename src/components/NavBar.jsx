@@ -17,11 +17,23 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className='hidden md:flex'>
           <ul className='flex text-white items-center'>
-            <li className="mr-4 hover:text-gray-400">Kreu</li>
-            <li className="mr-4 hover:text-gray-400">Rreth Nesh</li>
-            <li className="mr-4 hover:text-gray-400">Sherbimet</li>
-            <li className="mr-4 hover:text-gray-400">Kontakt</li>
-            <button type="button" className="text-black hover:text-white hover:border-white border-2  bg-white hover:bg-black text-base font-medium rounded-lg px-5 py-2.5 me-2 mb-2">Telefononi</button>
+          <li className="mr-4 hover:text-gray-400">
+            <a href="#about">Rreth Nesh</a>
+          </li>
+          <li className="mr-4 hover:text-gray-400">
+            <a href="#services">Sherbimet</a>
+          </li>
+          <li className="mr-4 hover:text-gray-400">
+            <a href="#contact">Kontakt</a>
+          </li>
+
+           <button 
+           type="button" 
+           className="text-black hover:text-white hover:border-white border-2 bg-white hover:bg-black text-base font-medium rounded-lg px-5 py-2.5 me-2 mb-2" 
+           onClick={() => window.location.href='tel:+0692732026'}>
+           Telefononi
+           </button>
+
           </ul>
         </div>
 
@@ -34,11 +46,17 @@ const Navbar = () => {
         <div className={nav ? 'w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center ' :  'hidden md:hidden'}>
           
           <ul className='pb-5'>
-            <li className='text-2xl pb-4 hover:text-gray-400'>Kreu</li>
-            <li className='text-2xl pb-4 hover:text-gray-400'>Rreth Nesh</li>
-            <li className='text-2xl pb-4 hover:text-gray-400'>Sherbimet</li>
-            <li className='text-2xl pb-4 hover:text-gray-400'>Kontakti</li>
-            <button type="button" className="text-black hover:text-white  bg-white hover:bg-black hover:border-white border-2   rounded-lg text-base font-medium px-5 py-2.5 me-2 mb-2">Telefononi</button>
+          <li className='text-2xl pb-4 hover:text-gray-400'>
+           <a href="#about">Rreth Nesh</a>
+          </li>
+          <li className='text-2xl pb-4 hover:text-gray-400'>
+           <a href="#services">Sherbimet</a>
+          </li>
+          <li className='text-2xl pb-4 hover:text-gray-400'>
+           <a href="#kontakti">Kontakti</a>
+          </li>
+
+            <button type="button" className="text-black hover:text-white  bg-white hover:bg-black hover:border-white border-2   rounded-lg text-base font-medium px-5 py-2.5 me-2 mb-2"  onClick={() => window.location.href='tel:+0692732026'}>Telefononi</button>
           </ul>
         </div>
       </div>

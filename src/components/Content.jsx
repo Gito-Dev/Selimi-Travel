@@ -1,9 +1,16 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import bg from '../assets/bg.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css'; 
+
 
 function Content() {
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  
+   },[])
   return (
-    <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div id='about' class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div class="absolute inset-0 -z-10 overflow-hidden">
         <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
           <defs>
@@ -20,7 +27,7 @@ function Content() {
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div class="lg:pr-4">
-            <div class="lg:max-w-lg">
+            <div data-aos="fade-up" data-aos-duration="3000" class="lg:max-w-lg">
               <p class="text-base font-semibold leading-7 text-indigo-600">Çmimet e pashmangshme dhe mbulimi i plotë</p>
               <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Përjetojeni botën me lehtësi</h1>
               <p class="mt-6 text-xl leading-8 text-gray-700">Zgjidhni ne për udhëtime të udhëzuar me avion, autobus dhe anije. Njihuni me sigurimin e makinave dhe shëndetësor, të gjitha në çmime të pashmangshme.</p>
@@ -32,7 +39,7 @@ function Content() {
         </div>
         <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div class="lg:pr-4">
-            <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+            <div data-aos="fade-up"   data-aos-duration="3000" class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <p>Zgjidhni ne për udhëtime të udhëzuar me avion, autobus dhe anije. 
                 Ne ofrojmë sigurimin e makinave dhe shëndetit për qetësinë tuaj të mendjes. 
                 Njihuni me çmimet tona konkurruese, duke bërë udhëtimin të arsyeshëm pa kompromis në cilësi.

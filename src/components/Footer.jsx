@@ -11,19 +11,19 @@ function Footer() {
 
         Selimi Travel  
       </div>
-      <p class="my-6 text-gray-500 ">"Filloni udhëtimet të paharrueshme me Selimi Travel, ku çdo destinacion është një kapitull i ri në aventurën tuaj."</p>
+      <p class="my-6 text-gray-300 ">"Filloni udhëtimet të paharrueshme me Selimi Travel, ku çdo destinacion është një kapitull i ri në aventurën tuaj."</p>
       <ul class="flex flex-wrap justify-center items-center mb-6 text-white">
           <li>
-              <a href="link" class="mr-4 hover:underline md:mr-6 ">Instagram</a>
+              <a href="https://www.instagram.com/selimi_travel?igshid=MzRlODBiNWFlZA%3D%3D" class="mr-4 hover:underline md:mr-6 ">Instagram</a>
           </li>
           <li>
-              <a href="link" class="mr-4 text-light hover:underline md:mr-6">Tiktok</a>
+              <a href="https://www.tiktok.com/@selimi.travel?is_from_webapp=1&sender_device=pc" class="mr-4 text-light hover:underline md:mr-6">Tiktok</a>
           </li>
           <li>
-              <a href="link" class="mr-4 text-light hover:underline md:mr-6 ">Facebook</a>
+              <a href="https://www.facebook.com/profile.php?id=100090592374202" class="mr-4 text-light hover:underline md:mr-6 ">Facebook</a>
           </li>
           <li>
-              <a href="link" class="mr-4 text-light hover:underline md:mr-6">Google Maps</a>
+              <a href="https://maps.app.goo.gl/5yhQNQgBjCrskkME8" class="mr-4 text-light hover:underline md:mr-6">Google Maps</a>
           </li>
           <li>
               <a href="link" class="mr-4 text-light hover:underline md:mr-6">Call</a>
