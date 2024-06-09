@@ -27,7 +27,7 @@ function Contact() {
                             <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">Mesazhi juaj</label>
                             <textarea id="message" name="message" rows="6" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-black focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
                         </div>
-                        <button type="submit" className="px-3.5 py-2.5 hover:border-black border-2  text-white hover:text-black  bg-black hover:bg-white  rounded-lg   me-2 mb-2 text-base font-medium ">Send Message</button>
+                        <button type="submit" className="px-3.5 py-2.5 hover:border-black border-2  text-white hover:text-black  bg-black hover:bg-white  rounded-lg   me-2 mb-2 text-base font-medium ">Dergo Mesazhin</button>
                     </form>
                 </div>
             </section>

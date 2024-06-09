@@ -53,7 +53,7 @@ const Navbar = () => {
            <a href="#services">Sherbimet</a>
           </li>
           <li className='text-2xl pb-4 hover:text-gray-400'>
-           <a href="#kontakti">Kontakti</a>
+           <a href="#contact">Kontakti</a>
           </li>
 
             <button type="button" className="text-black hover:text-white  bg-white hover:bg-black hover:border-white border-2   rounded-lg text-base font-medium px-5 py-2.5 me-2 mb-2"  onClick={() => window.location.href='tel:+0692732026'}>Telefononi</button>
