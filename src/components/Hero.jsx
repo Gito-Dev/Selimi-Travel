@@ -46,7 +46,7 @@ const Hero = () => {
         
         <div className=' mt-10'>
         <a href='#about' type="button" className="hover:border-white border-2  text-black hover:text-white  bg-white hover:bg-black rounded-lg px-5 py-2.5 me-2 mb-2 text-base font-medium ">Rreth Nesh</a>
-        <a href='#contact' type="button" className="hover:border-white border-2  text-black hover:text-white  bg-white hover:bg-black  rounded-lg  px-5 py-2.5 me-2 mb-2 text-base font-medium">Na kontaktoni</a>
+        <a href='#services' type="button" className="hover:border-white border-2  text-black hover:text-white  bg-white hover:bg-black  rounded-lg  px-5 py-2.5 me-2 mb-2 text-base font-medium">Sherbimet</a>
         </div>
 
         
