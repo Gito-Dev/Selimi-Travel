@@ -1,7 +1,10 @@
 import React from 'react'
+import { FaInstagram, FaFacebook, FaTiktok } from 'react-icons/fa';
+
 
 function About() {
   return (
+
     <div id='services' class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 ">
     <img src="https://4kwallpapers.com/images/wallpapers/texture-dark-background-purple-1920x1200-3086.jpg" alt="/bg" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"/>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -16,6 +19,11 @@ function About() {
           <p>Trageti<span></span></p>
           <p>Autobusi<span ></span></p>
         </div>
+        <div className="flex mt-2  pt-9">
+              <a href='https://www.instagram.com/selimi_travel?igshid=MzRlODBiNWFlZA%3D%3D'> <FaInstagram className="text-white mr-4 cursor-pointer hover:text-blue-500 "style={{ fontSize: '24px' }} /></a> 
+              <a href='https://www.facebook.com/profile.php?id=100090592374202'> <FaFacebook className="text-white mr-4 cursor-pointer hover:text-blue-500 "style={{ fontSize: '24px' }} /></a> 
+              <a href='https://www.tiktok.com/@selimi.travel?is_from_webapp=1&sender_device=pc'>  <FaTiktok className="text-white cursor-pointer hover:text-blue-500 "style={{ fontSize: '24px' }} /></a> 
+              </div>
         <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
           <div class="flex flex-col-reverse">
             <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Makina me qera</dd>
@@ -33,6 +41,7 @@ function About() {
       </div>
     </div>
   </div>
+ 
   
   )
 }
