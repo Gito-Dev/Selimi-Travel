@@ -7,6 +7,7 @@ import About from './About';
 import CountUp from 'react-countup'
 import Aos from 'aos';
 import 'aos/dist/aos.css'; 
+import Contact from './Contact';
 
 // import { ReactTyped } from 'react-typed';
 
@@ -21,13 +22,16 @@ const Hero = () => {
     <div className='w-full h-[90vh] top-[90px]'>
 
     <video
-        className='object-cover   w-[500px] h-[500px] sm:w-full sm:h-full   absolute  -z-10 ' 
-        src={heroVid}
-        autoPlay
-        loop
-        muted
-        controls={false}  
-      />
+  className='object-cover w-[500px] h-[500px] sm:w-full sm:h-full absolute -z-10'
+  src={heroVid}
+  autoPlay
+  loop
+  muted
+  controls={false}
+  disablePictureInPicture
+  disableRemotePlayback
+  playsInline 
+/> 
 
       <div className='w-full h-[90%] flex flex-col justify-center items-center text-white px-4 text-center'>
       <h1 class="max-w-2xl  text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">Selimi Travel</h1>
@@ -96,7 +100,9 @@ const Hero = () => {
 
        <Content />
        <About />
+       <Contact />
        <Gallery />
+       
 
     
     </>
