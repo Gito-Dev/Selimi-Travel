@@ -9,7 +9,7 @@ function Contact() {
     }, []);
 
     return (
-        <div id='contact' data-aos="fade-right" className="flex flex-col sm:flex-row max-w-full mx-auto p-4 bg-white shadow-sm overflow-hidden pt-[100px] pb-[100px]">
+        <div id='contact' data-aos="fade-right" className="flex flex-col sm:flex-row max-w-full mx-auto p-4 bg-white  overflow-hidden pt-[100px] pb-[100px]">
             <section className="bg-white w-full sm:w-1/2">
                 <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Na Kontakoni</h2>
