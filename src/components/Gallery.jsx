@@ -26,7 +26,7 @@ function Gallery() {
     </div>
     <div class="grid gap-4">
         <div data-aos="fade-up">
-            <img class="h-auto max-w-full shadow-lg rounded-lg" src="https://afar.brightspotcdn.com/dims4/default/5af1313/2147483647/strip/true/crop/3000x1592+0+323/resize/1440x764!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fb2%2Ff4%2F9a1ebe3f427f8e5eb937f8df8998%2Ftravelguides-maldives-videomediastudioeurope-shutterstock.jpg" alt=""/>
+            <img class="h-auto max-w-full shadow-lg rounded-lg" src="https://pohcdn.com/guide/sites/default/files/styles/node__blog_post__bp_banner/public/live_banner/sofia-1.jpg" alt=""/>
         </div>
         <div data-aos="fade-up">
             <img class="h-auto max-w-full shadow-lg rounded-lg" src="https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg" alt=""/>
