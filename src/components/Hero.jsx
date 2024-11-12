@@ -9,10 +9,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'; 
 import Contact from './Contact';
 
-// import { ReactTyped } from 'react-typed';
 
 const Hero = () => {
-   //effect 
    useEffect(()=>{
     Aos.init({duration:2000});
 
