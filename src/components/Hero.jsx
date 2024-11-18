@@ -1,35 +1,41 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useRef } from 'react';
 import heroVid from '../assets/video.mp4';
-import plane from '../assets/plane.png'
+import plane from '../assets/plane.png';
 import Content from './Content';
 import Gallery from './Gallery';
 import About from './About';
-import CountUp from 'react-countup'
+import CountUp from 'react-countup';
 import Aos from 'aos';
 import 'aos/dist/aos.css'; 
 import Contact from './Contact';
 
-
 const Hero = () => {
-   useEffect(()=>{
-    Aos.init({duration:2000});
+  const videoRef = useRef(null);
 
-   },[])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+
+    // Adjust video playback speed
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 2; // Increase playback speed (2x)
+    }
+  }, []);
+
   return (
     <>
-    <div className='w-full h-[90vh] top-[90px]'>
-
-    <video
-  className='object-cover w-[500px] h-[500px] sm:w-full sm:h-full absolute -z-10'
-  src={heroVid}
-  autoPlay
-  loop
-  muted
-  controls={false}
-  disablePictureInPicture
-  disableRemotePlayback
-  playsInline 
-/> 
+      <div className='w-full h-[90vh] top-[90px]'>
+        <video
+          ref={videoRef} // Reference to the video element
+          className='object-cover w-[500px] h-[500px] sm:w-full sm:h-full absolute -z-10'
+          src={heroVid}
+          autoPlay
+          loop
+          muted
+          controls={false}
+          disablePictureInPicture
+          disableRemotePlayback
+          playsInline 
+        />
 
       <div className='w-full h-[90%] flex flex-col justify-center items-center text-white px-4 text-center'>
       <h1 class="max-w-2xl  text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">Selimi Travel</h1>
@@ -97,9 +103,10 @@ const Hero = () => {
 
 
        <Content />
-       <About />
-       <Contact />
        <Gallery />
+       <Contact />
+       <About />
+
        
 
     
