@@ -1,15 +1,11 @@
-import React, { useEffect } from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 
 function Contact() {
 
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-    }, []);
+  
 
     return (
-        <div id='contact' data-aos="fade-right" className="flex flex-col sm:flex-row max-w-full mx-auto p-4 bg-white  overflow-hidden pt-[100px] pb-[100px]">
+        <div id='contact'  className="flex flex-col sm:flex-row max-w-full mx-auto p-4 bg-white  overflow-hidden pt-[100px] pb-[100px]">
             <section className="bg-white w-full sm:w-1/2">
                 <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Na Kontakoni</h2>
@@ -31,7 +27,7 @@ function Contact() {
                     </form>
                 </div>
             </section>
-            <div data-aos="fade-left" className="w-full sm:w-1/2 flex">
+            <div  className="w-full sm:w-1/2 flex">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11986.520958839094!2d19.4544078!3d41.3169069!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134fdba92fd2d117%3A0xf4314fe715b14ea1!2sSelimi%20travel!5e0!3m2!1sen!2s!4v1717928445425!5m2!1sen!2s"
                     width="100%"
